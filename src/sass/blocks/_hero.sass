@@ -6,18 +6,19 @@
     display: inline-block
     max-width: 520px
   &-title
-    font-size: 48px
+    font-size: 49px
     color: #fffafa
     line-height: 60px
-    max-width: 510px
-    margin-top: 80px
-    +reg
+    max-width: 520px
+    margin-top: 114px
+    margin-bottom: 0
+    font-weight: 400
   &-subtitle
     font-size: 20px
     color: #fffafa
-    +reg
-    margin-top: 49px
-    margin-bottom: 66px
+    margin-top: 31px
+    margin-bottom: 60px
+    margin-left: 2px
   &-list
     margin: 0
     padding: 0
@@ -25,7 +26,8 @@
       list-style-type: none
       display: flex
       align-items: center
-      margin-bottom: 27px
+      margin-bottom: 22px
+      margin-left: 4px
     &__image
       color: #ffffff
       font-size: 16px
@@ -36,24 +38,24 @@
       display: flex
       justify-content: center
       align-items: center
+      margin-right: 0
     &__text
       font-size: 15px
       color: #ffffff
-      +reg
-      margin-left: 27px
+      margin-left: 25px
   &-form
     display: flex
     flex-direction: column
     width: 370px
-    margin-top: 80px
+    margin-top: 125px
     border: 1px solid #ffffff
     background-color: #ffffff
     margin-bottom: 100px
     &__text
       color: #000000
       font-size: 18px
-      +reg
-      padding-top: 40px
+      line-height: 21px
+      padding-top: 37px
       padding-bottom: 28px
       margin: auto
       max-width: 235px
@@ -61,18 +63,131 @@
     &__span
       color: #000000
       font-size: 18px
-      +bold
   &__input
     width: 260px
     margin: auto
     text-align: center
-    padding: 20px
+    padding: 16px
     border: 1px solid #e8e8e8
     background-color: #ffffff
     font-size: 13px
     color: #7c7c7c
-    +reg
     margin-bottom: 15px
   &__button
-    margin-top: 20px
+    margin-top: 10px
     margin-bottom: 43px
+
+@media (max-width: 1200px)
+  .hero
+    &-title
+      font-size: 45px
+    &-subtitle
+      font-size: 19px
+@media (max-width: 992px)
+  .hero
+    &-title
+      font-size: 40px
+      padding-right: 25px
+    &-subtitle
+      font-size: 17px
+    &-list
+      &__text
+        font-size: 12px
+        color: #ffffff
+        margin-left: 20px
+    &-form
+      width: 330px
+      &__text
+        font-size: 17px
+@media (max-width: 768px)
+  .hero
+    &-wrap
+      display: flex
+      flex-direction: column
+    &-block
+      margin: auto
+    &-title
+      font-size: 38px
+      max-width: 768px
+      width: 100%
+      text-align: center
+      align-items: center
+      padding-right: 0
+      margin-right: 0
+    &-subtitle
+      font-size: 17px
+      text-align: center
+    &-list
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      &__item
+        width: 250px
+      &__text
+        font-size: 12px
+        color: #ffffff
+        margin-left: 20px
+    &-form
+      width: 400px
+      margin: auto
+      margin-top: 40px
+      &__text
+        font-size: 17px
+@media (max-width: 576px)
+  .hero
+    &-wrap
+      display: flex
+      flex-direction: column
+    &-block
+      margin: auto
+    &-title
+      font-size: 25px
+      max-width: 576px
+      width: 100%
+      text-align: center
+      align-items: center
+      padding-right: 0
+      margin-right: 0
+      margin-top: 50px
+    &-subtitle
+      font-size: 13px
+      text-align: center
+    &-list
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      &__item
+        width: 198px
+      &__text
+        font-size: 11px
+        color: #ffffff
+        margin-left: 20px
+    &-form
+      max-width: 300px
+      width: 90%
+      margin: auto
+      margin-top: 40px
+      &__text
+        font-size: 15px
+      &__span
+        font-size: 16px
+    &__input
+      max-width: 200px
+      width: 80%
+    &__button
+      max-width: 200px
+      width: 80%
+      font-size: 13px
+@media (max-width: 320px)
+  .hero
+    &-title
+      font-size: 22px
+    &-subtitle
+      font-size: 12px
+    &-form
+      &__text
+        font-size: 14px
+      &__span
+        font-size: 15px
+
+      
